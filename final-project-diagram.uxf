@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1.0">
+  <zoom_level>3</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>114</x>
+      <y>369</y>
+      <w>63</w>
+      <h>51</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+User
+--
+- username: String
+- password: String
+
+--
++ User(String, String)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>369</y>
+      <w>63</w>
+      <h>51</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Cart
+--
+~ contents: ArrayList&lt;Product&gt;
+~ subtotal: double
+--
+- Cart()
+~ add(Product): void
+~ remove(Product): void
+~ total(): double
++ display(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>174</x>
+      <y>369</y>
+      <w>42</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+</panel_attributes>
+    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>327</y>
+      <w>9</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>279</y>
+      <w>63</w>
+      <h>51</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+/CartManager/
+--
+~ add(Product): void
+~ remove(Product): void
+~ total(): double
++ display(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>303</x>
+      <y>282</y>
+      <w>63</w>
+      <h>57</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Order Log
+--
+- log: ArrayList&lt;Order&gt;
+--
++ placeOrder()
++ accessLog(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>15</x>
+      <y>369</y>
+      <w>63</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>UserList
+--
+- userList: ArrayList
+--
++add(User): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>75</x>
+      <y>369</y>
+      <w>45</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0...*
+stores &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>363</x>
+      <y>285</y>
+      <w>57</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0..*
+stores &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>414</x>
+      <y>285</y>
+      <w>63</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Order
+--
++ OID: int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>303</x>
+      <y>186</y>
+      <w>63</w>
+      <h>57</h>
+    </coordinates>
+    <panel_attributes>OrderManager
+--
+
+--
++ PlaceOrder()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>333</x>
+      <y>240</y>
+      <w>9</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+</diagram>
